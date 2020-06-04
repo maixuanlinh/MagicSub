@@ -7,6 +7,27 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editText"
+            android:hint="enter link"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/getaudiobtn"
+            android:layout_margin="10dp"
+            android:text="get audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
@@ -19,6 +40,12 @@
             android:layout_margin="20dp"
             android:id="@+id/pausebtn"
             android:text="pause audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_margin="20dp"
+            android:id="@+id/speed"
+            android:text="speed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
